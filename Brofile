@@ -1,0 +1,9 @@
+require 'bro'
+
+loop do
+  begin
+    be_a(:bro)
+  rescue
+    saved_by_a(:bro)
+  end while not bro.is_not_awesome?
+end
